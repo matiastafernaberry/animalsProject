@@ -9,8 +9,7 @@ class DogViewTestCase(TestCase):
     def test_get(self):
         status_code = 200
         view_class = views.DogRandomView
-        
         req = RequestFactory().get('/')
         req.user = AnonymousUser()
-        resp = views.DogRandomView.as_view()(req, *[], **{})
-        self.assertEqual(resp.status_code, 200)
+        resp = view_class.as_view()(req, *[], **{})
+        self.assertEqual(resp.status_code, status_code)
