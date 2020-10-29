@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSRF Token -->
+  <title>Dogs</title>
+  <!-- Scripts -->
+  {% load static from static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+
+  <script type='application/javascript' src="{% static 'js/jquery/jquery-3.5.1.min.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img id="dogs_random" src="#" alt="Dogs random">
+            </div>
+        </div>
+    </div>
+    <script type='application/javascript' src="{% static 'js/dog.js' %}"></script>
+</body>
+</html>
